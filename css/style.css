@@ -1,0 +1,117 @@
+
+/*Element*/
+header{
+	padding-top: 10px;
+	background-color: #DE4765;
+}
+
+body{
+	background-color: #E6E7E2;
+}
+
+img{
+	max-width: 100%;
+}
+
+h1{
+	text-align: center;
+}
+
+footer{
+	margin-top: 2em;
+	border-top: 3px solid #d9444a;
+	text-align: center;
+}
+
+/*Class*/
+
+.menu li{
+	display: inline-block;
+	list-style-type: none;
+}
+.menu a {
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.content{
+	background-color: #FFFFFF;
+}
+
+.entry p{
+	padding: 5px;
+}
+
+.copyright{
+	padding:1.7em;
+}
+
+.box{
+	background-color: #DE4765;
+	margin: 2em;
+	text-align: center;
+	padding: 1em;
+}
+
+.box a{
+	color: #FFFFFF;
+	font-size: 2em;
+}
+
+.menu-switch {
+	display: none;
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+}
+
+.menu-switch i:hover {
+	cursor: pointer;
+}
+
+/*ID*/
+
+#switch{
+	text-align: center;
+	display: none;
+}
+
+
+
+/*Media*/
+@media screen and (max-width: 992px) {
+	.menu-switch{
+		display: block;
+		background: #DE4765;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.box h3{
+		display: none;
+	}
+	#switch:checked + ul.menu {
+		display: block;
+	}
+	.menu li {
+		display: block;
+		text-align: center;
+		border-bottom: 1px solid #888;
+		padding: 1em 0;
+	}
+	ul.menu {
+		display: none;
+		/*瀏覽器預設 ul 的 left 為 40px*/
+		/* ul 跟 row 在同一層，所以要把 row 的 margin-left:-15px 加回去*/
+		margin-left: -55px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.box h3{
+		display: inline-block;
+		margin-left: 2em;
+	}
+}
